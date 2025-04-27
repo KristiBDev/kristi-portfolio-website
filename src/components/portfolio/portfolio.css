@@ -127,16 +127,24 @@
   transform: scale(1.2);
 }
 
+
 @media (max-width: 1024px) {
   .portfolio-item {
     flex-direction: column;
     gap: 32px;
     padding: 20px;
+    height: auto;
+    min-height: 100vh;
   }
 
   .portfolio-img {
     width: 100%;
-    height: 300px;
+    height: auto;
+    max-height: 300px;
+  }
+
+  .portfolio-img img {
+    max-height: 100%;
   }
 
   .portfolio-text {
@@ -155,6 +163,15 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio-item {
+    padding: 15px;
+    gap: 24px;
+  }
+
+  .portfolio-img {
+    max-height: 200px;
+  }
+
   .portfolio-text h2 {
     font-size: 28px;
   }

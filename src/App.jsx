@@ -16,6 +16,7 @@ const App = () => {
       </section>
      
       <section></section>
+      <section></section>
       <section></section> {/* empty sections for projects scroll snap */}
       <section id="Contact">
         <Contact />

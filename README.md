@@ -1,22 +1,25 @@
-# Project Title
+# Kristi's Portfolio Website
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+A modern, interactive portfolio website showcasing my skills, projects, and contact information with stunning 3D elements and animations.
 
 ## Features
 
-- Feature One
-- Feature Two
-- Feature Three
-- Feature Four
-- Feature Five
+- Interactive 3D computer model with orbiting technology logos
+- Animated hero section with typing effect
+- Responsive portfolio project showcase
+- Contact form with EmailJS integration
+- Smooth animations with Framer Motion
+- Fully responsive design
 
 ## Tech Stack
 
-- Technology 1
-- Technology 2
-- Technology 3
-- Technology 4
-- Technology 5
+- React 19
+- Three.js
+- React Three Fiber & Drei
+- Framer Motion
+- EmailJS for contact form
+- Vite for build tooling
+- CSS3 for styling
 
 ## Getting Started
 
@@ -25,7 +28,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
    ```bash
    npm install
    ```
-3. Create a `.env` file with your credentials:
+3. Create a `.env` file with your EmailJS credentials:
    ```
    VITE_SERVICE_ID=your_service_id
    VITE_TEMPLATE_ID=your_template_id
@@ -36,9 +39,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
    npm run dev
    ```
 
-## Build
+## Build and Deploy
 
 To build for production:
 ```bash
 npm run build
 ```
+
+To deploy to GitHub Pages:
+```bash
+npm run deploy
+```
+
+## Structure
+
+- `src/components/hero` - Hero section with animated text
+- `src/components/computer` - 3D computer model and orbiting technology logos
+- `src/components/portfolio` - Portfolio project showcase
+- `src/components/contact` - Contact form with EmailJS integration
