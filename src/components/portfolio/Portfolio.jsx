@@ -8,7 +8,7 @@ const Portfolio = () => {
         <section className="section">
           <div className="portfolio-item">
             <div className="portfolio-img">
-              <img src={`${import.meta.env.BASE_URL}inventory-system.png`} alt="IT Inventory System" />
+              <img src={`${import.meta.env.BASE_URL}it-inv-banner.png`} alt="IT Inventory System" />
             </div>
             <div className="portfolio-text">
               <h2>IT Inventory Management System</h2>
