@@ -76,7 +76,7 @@ const Portfolio = () => {
                 <span>Three.js</span>
                 <span>Framer Motion</span>
               </div>
-              <a href="https://github.com/KristiBDev/kristiwebsiteportfolio" target="_blank" rel="noopener noreferrer">View Project →</a>
+              <a href="https://github.com/KristiBDev/kristi-portfolio-website" target="_blank" rel="noopener noreferrer">View Project →</a>
             </div>
           </div>
         </section>
