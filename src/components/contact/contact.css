@@ -4,6 +4,7 @@
     align-items: center;
     min-height: 100vh;
     padding: 20px;
+    gap: 10%;
   }
   
   .cSection {
@@ -28,9 +29,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: rgba(2, 2, 45, 0.066);
+    background-color: #4682B4;
     padding: 50px;
-    border-radius: 50px;
+    border-radius: 15px;
+    
   }
   
   input,
@@ -55,15 +57,16 @@
   .formButton {
     width: 100%;
     padding: 10px;
-    background-color: #3228c0;;
+    background-color: #73C2FB;
     color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: large;
   }
   
   .formButton:hover {
-    background-color: #3709df;
+    background-color: #30c0F8;
   }
   
 
@@ -80,10 +83,33 @@
       gap: 30px;
     }
   }
-  
-  @media (max-width: 768px) {
-    .contact {
-      flex-direction: column;
-    }
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;      /* Center vertically */
+    min-height: 100vh;            /* Full viewport height */
+    padding: 20px 0;
+    gap: 24px;
   }
+  .gif-container {
+    display: none;
+  }
+  .cSection {
+    width: 100%;
+    max-width: 95vw;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    width: 95vw;
+    max-width: 400px;
+    padding: 24px 12px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: rgba(2, 2, 45, 0.066);
+  }
+}
   

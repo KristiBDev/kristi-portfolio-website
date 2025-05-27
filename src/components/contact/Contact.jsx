@@ -2,7 +2,7 @@ import "./contact.css";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
-
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const listVariant = {
   initial: {
@@ -55,6 +55,14 @@ const Contact = () => {
 
   return (
     <div className="contact" ref={ref} onSubmit={sendEmail}>
+     <div className="gif-container">
+        <Player
+          src="/contact_animation.json"
+          autoplay
+          loop
+          style={{ width: "300px", height: "300px", display: "block", margin: "0 auto" }}
+        />
+      </div>
       <div className="cSection">
         <motion.form
           ref={form}
@@ -62,7 +70,7 @@ const Contact = () => {
           animate={isInView ? "animate" : "initial"}
         >
           <motion.h1 variants={listVariant} className="cTitle">
-            Let's keep in touch
+            Let's keep in touch!
           </motion.h1>
           <motion.div variants={listVariant} className="formItem">
             <label>Name</label>
@@ -91,11 +99,9 @@ const Contact = () => {
           {error && <span>Something went wrong!</span>}
         </motion.form>
       </div>
-      {/* gif container placeholder 
-      <div className="gif-container">
-      <img src="/contact_gif.gif" alt="Contact" />
-      </div>
-      */}
+      
+     
+      
     </div>
   );
 };
